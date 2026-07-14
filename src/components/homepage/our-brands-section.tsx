@@ -30,9 +30,11 @@ export const OurBrandsSection = async () => {
 		},
 	});
 
-	const count = await prisma.classified.count({
+	const countResult = await prisma.classified.count({
 		where: { status: ClassifiedStatus.LIVE },
 	});
+	const count =
+		typeof countResult === "number" ? countResult : countResult?.count ?? 0;
 
 	return (
 		<div className="py-16 sm:py-24 bg-white">

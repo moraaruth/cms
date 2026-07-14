@@ -1,9 +1,9 @@
-import { PrismaClient } from "./prisma-client-shim.js";
+import { createPrismaClient } from "./prisma-client-shim.js";
 
-const globalForPrisma = global as unknown as { prisma: PrismaClient };
+const globalForPrisma = global as unknown as { prisma: ReturnType<typeof createPrismaClient> };
 
 function makeClient() {
-	return new PrismaClient();
+	return createPrismaClient();
 }
 
 export const prisma = globalForPrisma.prisma || makeClient();

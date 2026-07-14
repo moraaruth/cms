@@ -15,9 +15,13 @@ export const HeroSection = async (props: AwaitedPageProps) => {
 	const totalFiltersApplied = Object.keys(searchParams || {}).length;
 	const isFilterApplied = totalFiltersApplied > 0;
 
-	const classifiedsCount = await prisma.classified.count({
+	const classifiedsCountResult = await prisma.classified.count({
 		where: buildClassifiedFilterQuery(searchParams),
 	});
+	const classifiedsCount =
+		typeof classifiedsCountResult === "number"
+			? classifiedsCountResult
+			: classifiedsCountResult?.count ?? 0;
 
 	const minMaxResult = await prisma.classified.aggregate({
 		where: { status: ClassifiedStatus.LIVE },
