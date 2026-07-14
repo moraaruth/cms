@@ -1,6 +1,6 @@
 import { routes } from "@/config/routes";
 import { prisma } from "@/lib/prisma";
-import { ClassifiedStatus } from "@prisma/client";
+import { ClassifiedStatus } from "@/lib/prisma-enums";
 import Image from "next/image";
 import Link from "next/link";
 

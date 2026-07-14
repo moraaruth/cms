@@ -4,7 +4,7 @@ import type { StreamableSkeletonProps } from "@/components/admin/classifieds/str
 import { routes } from "@/config/routes";
 import { prisma } from "@/lib/prisma";
 import { generateThumbHashFromSrcUrl } from "@/lib/thumbhash-server";
-import { CurrencyCode } from "@prisma/client";
+import { CurrencyCode } from "@/lib/prisma-enums";
 import { revalidatePath } from "next/cache";
 import { forbidden, redirect } from "next/navigation";
 import { randomInt } from "node:crypto";

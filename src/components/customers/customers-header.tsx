@@ -1,6 +1,6 @@
 import { RadioFilter } from "@/components/shared/radio-filter";
 import type { AwaitedPageProps } from "@/config/types";
-import { CustomerStatus } from "@prisma/client";
+import { CustomerStatus } from "@/lib/prisma-enums";
 
 export const AdminCustomersHeader = ({ searchParams }: AwaitedPageProps) => {
 	return (

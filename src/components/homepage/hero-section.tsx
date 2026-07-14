@@ -4,7 +4,7 @@ import type { AwaitedPageProps } from "@/config/types";
 import { imgixLoader } from "@/lib/imgix-loader";
 import { prisma } from "@/lib/prisma";
 import { buildClassifiedFilterQuery } from "@/lib/utils";
-import { ClassifiedStatus } from "@prisma/client";
+import { ClassifiedStatus } from "@/lib/prisma-enums";
 import Link from "next/link";
 import { Button } from "../ui/button";
 import { HomepageTaxonomyFilters } from "./homepage-filters";

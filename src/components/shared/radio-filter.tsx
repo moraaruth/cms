@@ -1,7 +1,7 @@
 "use client";
 import type { AwaitedPageProps } from "@/config/types";
 import { cn } from "@/lib/utils";
-import type { ClassifiedStatus } from "@prisma/client";
+import type { ClassifiedStatus } from "@/lib/prisma-enums";
 import { useRouter } from "next/navigation";
 import { Label } from "../ui/label";
 import { RadioGroup, RadioGroupItem } from "../ui/radio-group";

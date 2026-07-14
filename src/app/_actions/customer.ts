@@ -2,7 +2,7 @@
 
 import { routes } from "@/config/routes";
 import { prisma } from "@/lib/prisma";
-import type { CustomerStatus } from "@prisma/client";
+import type { CustomerStatus } from "@/lib/prisma-enums";
 import { revalidatePath } from "next/cache";
 import {
 	CreateCustomerSchema,

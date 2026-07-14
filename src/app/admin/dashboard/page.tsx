@@ -1,8 +1,8 @@
 import { KPICards } from "@/components/admin/dashboard/kpi-cards";
 import { SalesChart } from "@/components/admin/dashboard/sales-chart";
 import { prisma } from "@/lib/prisma";
+import { ClassifiedStatus, CustomerStatus } from "@/lib/prisma-enums";
 import { calculatePercentageChange } from "@/lib/utils";
-import { ClassifiedStatus, CustomerStatus } from "@prisma/client";
 import { endOfMonth, format, startOfMonth, subMonths } from "date-fns";
 
 async function getDashboardData() {

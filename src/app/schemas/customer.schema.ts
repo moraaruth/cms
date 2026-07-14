@@ -1,4 +1,4 @@
-import { CustomerStatus } from "@prisma/client";
+import { CustomerStatus } from "@/lib/prisma-enums";
 import { z } from "zod";
 
 export const SubmitDetailsSchema = z.object({

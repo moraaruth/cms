@@ -7,7 +7,8 @@ import {
 import { toast } from "@/hooks/use-toast";
 import { formatCustomerStatus } from "@/lib/utils";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { type Customer, CustomerStatus } from "@prisma/client";
+import { type Customer } from "@prisma/client";
+import { CustomerStatus } from "@/lib/prisma-enums";
 import { useTransition } from "react";
 import { type SubmitHandler, useForm } from "react-hook-form";
 import {

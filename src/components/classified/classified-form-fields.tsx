@@ -16,7 +16,7 @@ import {
 	OdoUnit,
 	Transmission,
 	ULEZCompliance,
-} from "@prisma/client";
+} from "@/lib/prisma-enums";
 import dynamic from "next/dynamic";
 import { useFormContext } from "react-hook-form";
 import {

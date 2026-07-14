@@ -5,7 +5,7 @@ import {
 	OdoUnit,
 	Transmission,
 	ULEZCompliance,
-} from "@prisma/client";
+} from "@/lib/prisma-enums";
 import { z } from "zod";
 
 export const ClassifiedTaxonomyAISchema = z.object({

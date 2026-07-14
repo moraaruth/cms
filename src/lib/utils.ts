@@ -11,7 +11,7 @@ import {
 	type Prisma,
 	Transmission,
 	ULEZCompliance,
-} from "@prisma/client";
+} from "@/lib/prisma-enums";
 import { type ClassValue, clsx } from "clsx";
 import { format, parse } from "date-fns";
 import prettyBytes from "pretty-bytes";

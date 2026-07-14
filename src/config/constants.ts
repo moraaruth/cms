@@ -1,5 +1,8 @@
 import type { BadgeProps } from "@/components/ui/badge";
-import { ClassifiedStatus, CustomerStatus } from "@prisma/client";
+import {
+	ClassifiedStatus,
+	CustomerStatus,
+} from "@/lib/prisma-enums";
 import { routes } from "./routes";
 
 export const imageSources = {

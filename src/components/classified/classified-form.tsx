@@ -9,7 +9,11 @@ import type { ClassifiedWithImages } from "@/config/types";
 import { useToast } from "@/hooks/use-toast";
 import { formatClassifiedStatus } from "@/lib/utils";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { ClassifiedStatus, CurrencyCode, OdoUnit } from "@prisma/client";
+import {
+	ClassifiedStatus,
+	CurrencyCode,
+	OdoUnit,
+} from "@/lib/prisma-enums";
 import { Loader2 } from "lucide-react";
 import { useTransition } from "react";
 import { type SubmitHandler, useForm } from "react-hook-form";

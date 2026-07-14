@@ -1,4 +1,4 @@
-import { ClassifiedStatus, CustomerStatus } from "@prisma/client";
+import { ClassifiedStatus, CustomerStatus } from "@/lib/prisma-enums";
 import { z } from "zod";
 
 export const AdminClassifiedFilterSchema = z.object({

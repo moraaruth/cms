@@ -2,7 +2,7 @@ import type { Favourites } from "@/config/types";
 import { prisma } from "@/lib/prisma";
 import { redis } from "@/lib/redis-store";
 import { getSourceId } from "@/lib/source-id";
-import { ClassifiedStatus } from "@prisma/client";
+import { ClassifiedStatus } from "@/lib/prisma-enums";
 import { LatestArrivalsCarousel } from "./latest-arrivals-carousel";
 
 export const LatestArrivals = async () => {
